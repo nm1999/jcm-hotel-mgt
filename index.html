@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="w3css.css">
+    <title>topnav</title>
+</head>
+<style>
+     .fa-bars{
+        font-size:25px;
+        cursor: pointer;
+        display: none;
+    }
+    .fa-search{
+        position: absolute;
+        font-size:20px;
+        padding:8px;
+    }
+    .formgroup input[type=text]{
+        padding-left:35px;
+    }
+    .form-control{
+        border-radius:25px;
+    }
+    .icons .fa{
+        font-size:22px;
+        margin-left:20px;
+    }
+    @media screen and (max-width:568px){
+        .icons{
+            display: none;
+        }
+        h4{
+            text-align: center;
+        }
+        .fa-bars{
+            display:inline-block;
+        }
+        .links{
+            display: none;
+        }
+        .cards .w3-card-2{
+            width:95%;
+            display: inline-block;
+            justify-content: center;
+            margin-left:10px;
+        }       
+    }
+    @media screen and (min-width:600px){
+        .cards .w3-card-2{
+            float: left;
+            margin-left:25px;
+            width:45%;
+            margin-top:10px;
+        }
+    }
+    @media screen and (min-width:800px){
+        .cards .w3-card-2{
+            float: left;
+            margin-left:25px;
+            width:30%;
+            margin-top:10px;
+        }
+    }
+    @media screen and (min-width:1000px){
+        .cards .w3-card-2{
+            float: left;
+            margin-left:30px;
+            width:22%;
+            margin-top:10px;
+        }
+    }
+    .links a:hover{
+        text-decoration: none;
+    }
+    .opennav p{
+        display: block;
+    }
+   .w3-sidenav{
+       display: none;
+   }
+    .cards .w3-card-2:hover{
+            transform: scale(1.05,1.05);
+            /* -ms-transform: scale(1.05,1.05); */
+            box-shadow:20px 20px 100px rgba(0,0,0,0.3);
+        }
+    .position-fixed {
+        z-index: 2;
+        top: 0;
+    }
+    .cards{
+        margin-top: 100px;
+    }
+    .footer{
+        margin-top:110px;
+    }
+</style>
+
+<body>
+<div class="w3-card-4 position-fixed container-fluid w3-white" >
+    <div class="row bg-danger w3-padding">
+        <div class="col-sm-4 col-md-4 col-lg-4 ">
+            <i class="fa fa-bars"></i>
+            <h4>Hotel Management System</h4>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+            <div class="formgroup">
+                <i class="fa fa-search"></i>
+                <input type="text" class="form-control" placeholder="search .....">
+            </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4 w3-center icons">
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+        </div>        
+    </div>
+    <div class="navbar links">
+        <a href="" class="">Home</a>
+        <a href="" class="">Contact us</a>
+        <a href="" class="">About us</a>
+        <a href="" class="">FAQs</a>
+        <a href="" class="">Donate to Us</a>
+    </div>
+</div>
+<div class="w-25 w3-animate-top">
+    <div class="w3-sidenav w3-yellow">
+        <p class="">
+            <a href="">Home</a>
+        </p>
+        <p>
+            <a href="">Contact us</a>
+        </p>
+        <p>
+            <a href="">About us</a>
+        </p>
+        <p>        
+           <a href="">FAQs</a>
+        </p>
+        <p>
+          <a href="">Donate to Us</a>
+        </p>
+    </div>
+</div>
+<div class="contianer cards ">
+    <div class="w3-card-2 mt-2  w3-round-large ">
+        <img src="images/10.jpg" class="w-100" alt="">
+        <div class="w3-center w3-padding ">
+            <b>Room 24</b>
+            <div class="navbar">
+                <p>$ 300</p>
+                <p><button class="w3-red w3-btn btn1">Book now</button></p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-card-2  mt-2 w3-round-large ">
+        <img src="images/13.jpg" class="w-100" alt="">
+        <div class="w3-center w3-padding w3-round">
+            <div class="w3-center w3-padding ">
+                <b>Room 24</b>
+                <div class="navbar">
+                    <p>$ 4500</p>
+                    <p><button class="w3-red w3-btn">Book now</button></p>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <div class="w3-card-2  mt-2 w3-round-large">
+        <img src="images/14.jpg" class="w-100" alt="">
+        <div class="w3-center w3-padding w3-round">
+            <div class="w3-center w3-padding ">
+                <b>Room 24</b>
+                <div class="navbar">
+                    <p>$ 60</p>
+                    <p><button class="w3-red w3-btn">Book now</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w3-card-2  mt-2 w3-round-large">
+        <img src="images/16.jpg" class="w-100" alt="">
+        <div class="w3-center w3-padding w3-round">
+            <div class="w3-center w3-padding ">
+                <b>Room 24</b>
+                <div class="navbar">
+                    <p>$ 120</p>
+                    <p><button class="w3-red w3-btn">Book now</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w3-card-2  mt-2 w3-round-large">
+        <img src="images/2.jpg" class="w-100" alt="">
+        <div class="w3-center w3-padding w3-round">
+            <div class="w3-center w3-padding ">
+                <b>Room 24</b>
+                <div class="navbar">
+                    <p>$ 315</p>
+                    <p><button class="w3-red w3-btn">Book now</button></p>
+                </div>
+            </div>     
+        </div>
+    </div>
+    <div class="w3-card-2  mt-2 w3-round-large">
+        <img src="images/24.jpg" class="w-100" alt="">
+        <div class="w3-center w3-padding w3-round">
+            <div class="w3-center w3-padding ">
+                <b>Room 24</b>
+                <div class="navbar">
+                    <p>$ 95</p>
+                    <p><button class="w3-red w3-btn">Book now</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w3-card-2  mt-2 ">
+        <img src="images/27.jpg" class="w-100" alt="">
+        <div class="w3-center w3-padding w3-round">
+            <div class="w3-center w3-padding ">
+                <b>Room 24</b>
+                <div class="navbar">
+                    <p>$ 300</p>
+                    <p><button class="w3-red w3-btn">Book now</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="w3-container">
+    <div class="row  w3-padding jumbotron w3-text-white">
+        <div class="col-sm-12 col-lg-3 col-md-3">
+                <b>Contact us </b>
+                <ul>
+                    <li><i class="fa fa-globe"></i> www.google.com</li>
+                    <li><i class="fa fa-envelope"></i> google.gmail.com</li>
+                    <li><i class="fa fa-whatsapp"></i> 0781260856</li>
+                    <li><i class="fa fa-facebook"></i> facebook.com</li>
+                </ul>
+        </div>
+        <div class="col-sm-12 col-lg-3 col-md-3">
+            <b></b>
+            <ul>
+                <li><i class="fa fa-globe"></i> www.google.com</li>
+                <li><i class="fa fa-envelope"></i> www.google.com</li>
+                <li><i class="fa fa-whatsapp"></i> www.google.com</li>
+                <li><i class="fa fa-facebook"></i> www.google.com</li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-lg-3 col-md-3">
+            <b>Contact us </b>
+            <ul>
+                <li><i class="fa fa-globe"></i> www.google.com</li>
+                <li><i class="fa fa-envelope"></i> www.google.com</li>
+                <li><i class="fa fa-whatsapp"></i> www.google.com</li>
+                <li><i class="fa fa-facebook"></i> www.google.com</li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-lg-3 col-md-3">
+            <b>Contact us </b>
+            <ul>
+                <li><i class="fa fa-globe"></i> www.google.com</li>
+                <li><i class="fa fa-envelope"></i> www.google.com</li>
+                <li><i class="fa fa-whatsapp"></i> www.google.com</li>
+                <li><i class="fa fa-facebook"></i> www.google.com</li>
+            </ul>
+        </div>
+    </div>
+    <div class="w3-center">
+        <i>&copy  2022 All rights reserved. ajcmtech codes </i>
+    </div>
+</footer>
+
+
+<script>
+    $(document).ready(function(){
+        $(".fa-bars").click(function(){
+            $(".w3-sidenav").toggleClass("w3-show w3-animate-left")
+        })
+    })
+</script>
+</body>
+</html>
